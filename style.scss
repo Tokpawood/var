@@ -1,0 +1,110 @@
+/*Declaration of Standard variable*/
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+/*Using of the variable*/
+body{
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: $fontsize;
+}
+
+/*Sass stand for Syntactically Awesome Stylesheet
+It's an extension to css
+Sass is a CSS pre-processor
+It's compatible with all versions of css
+Sass reduces repetition of css and therefore saves time
+Sass was designed by  Hampton Catlin and de veloped by Natalie Weizenbaun in 2006
+*/
+
+/*
+Why use Sass?
+1. Stylesheets are getting larger, more complex, and harder to maintain. Tis is whre a css pr-processor can help.
+2. Sass let us use features that do not exist in CSS, like bvariables, nested  rules, mixins, imports, built-in functions and other stuff.
+
+How does Sass work ?
+- A browser does not understand Sass cade. Therefore, you will need a Sass pre-processor to convert code into CSS.
+This process is called transpiling. (transpiling is a term of takin a source code written in one language dand transform/translate it into another language.)
+
+Sass File Type ?
+Sass files has the ".scss" file extension
+*/
+
+/*Variable
+ Variable are a way too store information that you cans re-use later.
+ With Sass, you can store information in variable like:
+ - strings
+ -Numbers
+ -colors
+ -booleans
+ -lists
+ -nulls
+ Sass uses the $ symbole, followd by a name, to declare variable:
+ $variablename: value;
+
+ 1. Using Sass !global:
+        The default behavior for variable scope can be ovverridden by using the !global switch.
+        it indicates that a variable is global, which means that it is accessible on all levels.
+ */
+
+ /* 
+    Sass Nested Rules and properties:
+        Sass let nest Css selectors in the same way as HTML
+
+        1. Sass Nested Properties:
+        Many Css properties have the same prefix, like font-family, font-sizing and font-weight or text-align, text-transform and text-overflow.
+        With Sass you can write the as nested properties:
+
+        Example:
+
+            font: {
+                family: "Arial",
+                size: 18px,
+                weight: bold,
+                style: italic,
+                decoration: underline
+            }
+            text: {
+                align: center,
+                transform: uppercase,
+                overflow: hidden
+            }
+ */
+
+ /* 
+            Sass @import and Partials
+                Sass keeps the Css DRY (Don't Repeat Yourself). One way to write Dry code is to keep related code in separate files.
+
+                1. Sass Importing Files:
+                    Just like Css, sass also supports the @import directive.
+                    The @import directiveallows you to include the content of one file in another.
+ */
+
+ /* 
+            Sass @mixin and @include :
+
+                1. Sass Mixins
+
+                    The @mixin directive lets creatte css code that is to be reused throughout the website.
+                    The @include directive is created to let you use (include) the mixin
+
+                    A mixin is defined with the @mixin directive
+
+                    A tip on hyphens and underscore in Sass are considered to be the same. th meam :
+                    Examble:
+
+                    @mixin important -text{} && @mixin important_text{} are the same mixin.
+
+                2. Using a mixin
+
+                    The @include directive is used to include a mixin.      
+ */
+
+ /* 
+            Sass @extend and Inheritance:
+
+            1. Sass @extend Directive
+
+                The @extend directive lets share a set of css properties from one selector to another.
+ */
